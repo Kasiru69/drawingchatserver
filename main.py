@@ -12,7 +12,7 @@ app = FastAPI()
 # Add CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # In production, you might want to restrict this
+    allow_origins=["https://drawingchatserver-2.onrender.com"],  # In production, you might want to restrict this
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
